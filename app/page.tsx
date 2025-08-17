@@ -62,7 +62,7 @@ export default function FloodDetectionSystem() {
   const [aiAnalysis, setAiAnalysis] = useState<string>("");
   const fileInputRef = useRef<HTMLInputElement>(null);
 
-  const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:8001";
+  const API_BASE_URL = "https://flood-analyser-backend.onrender.com";
 
   // Dynamic import for Leaflet map (client-side only)
   const FloodMap = dynamic(() => import("../components/FloodMap"), {
